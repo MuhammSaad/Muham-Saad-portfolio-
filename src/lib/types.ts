@@ -1,0 +1,20 @@
+export type Project = {
+  slug: string;
+  title: string;
+  category: string;
+  cover: string;
+  description: string;
+  tech: string[];
+  github: string;
+  demo: string;
+  featured: boolean;
+  objectives: string[];
+  problemStatement: string;
+  calculations: string[];
+  results: string[];
+  lessons: string;
+  gallery: string[];
+  videos: string[];
+  model360?: string[];
+  model3d?: string;
+};

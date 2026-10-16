@@ -1,0 +1,203 @@
+[
+  {
+    "slug": "engine-lifter-mechanism",
+    "title": "Design & Simulation of Engine Lifter Mechanism",
+    "category": "FEA / Mechanism Design",
+    "cover": "/images/projects/engine-lifter/cover.png",
+    "description": "Structural FEA, spatial optimization, and REBA ergonomic assessment of the valve lifter assembly for a Honda single-cylinder engine, completed during an internship at Atlas Honda.",
+    "tech": ["ANSYS", "SolidWorks", "FEA", "REBA Ergonomics", "DFM"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Reduce peak von Mises stress in the lifter under cyclic valve-train loading",
+      "Optimize the spatial envelope of the mechanism within the existing cylinder head",
+      "Assess and improve operator ergonomics during assembly using REBA scoring"
+    ],
+    "problemStatement": "The existing lifter mechanism showed stress concentrations near the camshaft contact face and an assembly posture that scored poorly on ergonomic assessment, risking both part fatigue and operator strain on the line.",
+    "calculations": [
+      "Static structural FEA with cam-profile-derived cyclic loading",
+      "Contact stress estimation at the cam-follower interface",
+      "REBA scoring across assembly posture stages"
+    ],
+    "results": [
+      "Lowered peak stress concentration at the critical contact face",
+      "Proposed envelope change compatible with existing tooling",
+      "REBA score improved from a high-risk to a low-risk posture band"
+    ],
+    "lessons": "Iterating between simulation output and shop-floor ergonomics constraints showed how structural optimization and human-factors design have to be solved together, not sequentially.",
+    "gallery": [
+      "/images/projects/engine-lifter/cad-1.jpg",
+      "/images/projects/engine-lifter/fea-1.jpg",
+      "/images/projects/engine-lifter/reba-1.jpg"
+    ],
+    "videos": [],
+    "model3d": "/models/Engine Lifter Mechanism/Engine Lifter Mechanism.STL"
+  },
+  {
+    "slug": "combined-cycle-power-plant",
+    "title": "Combined Cycle Power Plant Design",
+    "category": "Thermodynamics / Energy Systems",
+    "cover": "/images/projects/ccppd/cover.png",
+    "description": "Thermodynamic cycle design and performance analysis of a combined-cycle power plant, including Brayton-Rankine cycle coupling and heat-recovery steam generator sizing.",
+    "tech": ["MATLAB", "Thermodynamics", "Cycle Analysis"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Model coupled Brayton and Rankine cycles for a target power output",
+      "Size the heat-recovery steam generator (HRSG) for the exhaust conditions",
+      "Evaluate overall plant efficiency against single-cycle baselines"
+    ],
+    "problemStatement": "Single-cycle gas turbine plants reject significant exhaust heat; the goal was to quantify the efficiency gain available from recovering that heat in a bottoming steam cycle.",
+    "calculations": [
+      "First-law energy balances across turbine, compressor, and HRSG",
+      "Pinch-point analysis for HRSG sizing",
+      "Combined cycle efficiency vs. simple cycle comparison"
+    ],
+    "results": [
+      "Demonstrated efficiency gain over the single-cycle baseline",
+      "Defined HRSG pinch and approach temperatures for feasible sizing"
+    ],
+    "lessons": "Cycle-level thermodynamics rewards getting the pinch-point assumptions right before optimizing anything downstream.",
+    "gallery": [],
+    "videos": []
+  },
+  {
+    "slug": "formula-student-chassis",
+    "title": "Formula Student Chassis Design",
+    "category": "Structures / Formula Student",
+    "cover": "/images/projects/fs-chassis/cover.png",
+    "description": "Steel spaceframe chassis engineering for a Formula Student Concept Class entry, including a full DBOM/CBOM cost report as Technical Lead of Team Techno.",
+    "tech": ["SolidWorks", "AISI 4130 Chromoly", "FEA", "Cost Analysis"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Design a spaceframe chassis meeting FSUK Concept Class structural rules",
+      "Produce a compliant Design and Cost Bill of Materials (DBOM / CBOM)",
+      "Lead a student team through the technical submission cycle"
+    ],
+    "problemStatement": "The FSUK Concept Class submission required a structurally sound spaceframe design and a fully costed, rule-compliant BOM, delivered on a competition timeline.",
+    "calculations": [
+      "Torsional stiffness estimation of the spaceframe",
+      "FSUK cost multiplier application across a hierarchical part-numbering scheme"
+    ],
+    "results": [
+      "Completed spaceframe design meeting Concept Class rules",
+      "Delivered a full DBOM and CBOM report in competition format"
+    ],
+    "lessons": "Leading the technical submission end-to-end showed how much of vehicle engineering is coordinating documentation and rules compliance alongside the physics.",
+    "gallery": [],
+    "videos": [],
+    "model3d": "/models/fsuk-chassis-design/fsuk-chassis-design.STL"
+  },
+  {
+    "slug": "helical-gearbox-fault-diagnosis",
+    "title": "Two-Stage Helical Gearbox with Bearing Fault Detection And Diagnosis",
+    "category": "Machine Design / Predictive Maintenance",
+    "cover": "/images/projects/bearing-fault-detection/cover.png",
+    "description": "Group project building a physically prototyped two-stage helical gearbox; led the machine learning side — vibration/sound feature extraction and a Random Forest classifier for autonomous bearing fault detection.",
+    "tech": ["Python", "Random Forest", "Signal Processing (FFT)", "Machine Learning", "SolidWorks", "3D Printing"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Extract time-domain features (RMS, kurtosis) from raw accelerometer and sound-sensor signals",
+      "Label and structure healthy vs. faulty bearing datasets across operating speeds for supervised learning",
+      "Train and validate a Random Forest classifier to autonomously distinguish healthy from faulty bearing states",
+      "Evaluate model performance via confusion matrix, feature importance, and learning-curve analysis"
+    ],
+    "problemStatement": "Continuous gearbox operation causes localized rolling-element bearing defects that must be caught before catastrophic failure. The challenge was to design and fabricate a working two-stage helical gearbox integrating gears, shafts, and bearings, then optimize it with a multi-sensor fault-diagnosis system rather than relying on manual inspection alone.",
+    "calculations": [
+      "Transverse module derived from a 1.25 mm normal module at a 45° helix angle (mt = 1.7678 mm)",
+      "Stage 1: 13T/39T gear pair for a 3:1 ratio, pitch diameters of 22.98 mm and 68.94 mm, 45.96 mm center distance",
+      "Stage 2: 13T/52T gear pair for a 4:1 ratio, pitch diameters of 22.98 mm and 91.92 mm, 57.45 mm center distance",
+      "Combined system ratio of 12:1 across both stages",
+      "RMS and kurtosis feature extraction from accelerometer signals to quantify vibration energy and impulsive bearing-defect impacts"
+    ],
+    "results": [
+      "Built the FFT-based signal processing pipeline extracting RMS and kurtosis features from vibration/acoustic data",
+      "Trained a Random Forest classifier achieving ~97% bearing-fault classification accuracy",
+      "Confirmed via feature-importance analysis that z-axis vibration features carried the strongest fault signal",
+      "Validated the model generalized well despite background noise from the 3D-printed gear mesh and wooden housing damping"
+    ],
+    "lessons": "The biggest lesson was that model accuracy depended more on the mechanical setup than the algorithm choice — noise from the 3D-printed gears and housing resonance directly affected which vibration features were separable. Random Forest worked well here because it handled the non-linear, high-dimensional combined vibration/acoustic features without heavy tuning, but getting there meant close back-and-forth with the teammates handling the mechanical fabrication to understand what the sensor data actually represented.",
+    "gallery": [],
+    "videos": []
+  },
+  {
+    "slug": "robotic-hand",
+    "title": "Robotic Hand",
+    "category": "Robotics",
+    "cover": "/images/projects/robotic-hand/cover.png",
+    "description": "A 3D-printed underactuated prosthetic hand prototype with tendon-driven fingers.",
+    "tech": ["SolidWorks", "3D Printing", "Servo Control"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Design an underactuated finger mechanism driven by a single tendon per finger",
+      "Prototype a low-cost, 3D-printable prosthetic hand structure"
+    ],
+    "problemStatement": "Fully actuated prosthetic hands require a motor per joint, adding cost and weight; an underactuated tendon-driven approach can reduce both while still gripping a range of object shapes.",
+    "calculations": [
+      "Tendon routing and finger linkage kinematics",
+      "Grip force estimation across finger joints"
+    ],
+    "results": [
+      "Working 3D-printed prototype capable of adaptive grip across varied object shapes"
+    ],
+    "lessons": "Underactuation trades precision for mechanical simplicity — tuning tendon tension turned out to matter more than the linkage geometry itself.",
+    "gallery": [],
+    "videos": [],
+    "model3d": "/models/robotic-hand/robotic-hand.STL"
+  },
+  {
+    "slug": "f1-helmet-design",
+    "title": "F1 Driver Helmet Design",
+    "category": "Product Design",
+    "cover": "/images/projects/f1-helmet/cover.png",
+    "description": "SolidWorks design study of an F1 driver helmet shell, focused on aerodynamic form and structural layout.",
+    "tech": ["SolidWorks", "Surfacing", "CAD"],
+    "github": "",
+    "demo": "",
+    "featured": true,
+    "objectives": [
+      "Model a race-helmet shell using SolidWorks surfacing tools",
+      "Study aerodynamic shaping and shell geometry constraints"
+    ],
+    "problemStatement": "Add your specific design goal here — e.g. what aerodynamic or structural problem you were exploring with this shape.",
+    "calculations": [],
+    "results": [
+      "Completed full-surface CAD model of the helmet shell"
+    ],
+    "lessons": "Add what you personally learned from the surfacing/modeling process.",
+    "gallery": [],
+    "videos": [],
+    "model3d": "/models/f1-helmet/f1-helmet.STL"
+  },
+  {
+    "slug": "skateboard-design",
+    "title": "Skateboard Design",
+    "category": "Product Design",
+    "cover": "/images/projects/skateboard/cover.png",
+    "description": "SolidWorks design and modeling of a skateboard deck and truck assembly.",
+    "tech": ["SolidWorks", "CAD"],
+    "github": "",
+    "demo": "",
+    "featured": false,
+    "objectives": [
+      "Model a skateboard deck and truck/wheel assembly in SolidWorks"
+    ],
+    "problemStatement": "Add your specific design goal — e.g. deck flex, truck geometry, or manufacturability focus.",
+    "calculations": [],
+    "results": [
+      "Completed full assembly model"
+    ],
+    "lessons": "Add what you learned from this project.",
+    "gallery": [],
+    "videos": [],
+    "model3d": "/models/skateboard/skateboard.STL"
+  }
+]
