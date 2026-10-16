@@ -21,9 +21,7 @@ export default function Research() {
           <h2 className="text-section text-slate-900 dark:text-slate-50 mb-2">
             Research Interest
           </h2>
-          <p className="text-base text-slate-700 dark:text-slate-400 mb-12 max-w-2xl">
-            Applied engineering research, industrial simulation investigations, and prognostic telemetry modeling.
-          </p>
+
         </motion.div>
 
         {/* Research Domains Grid */}
